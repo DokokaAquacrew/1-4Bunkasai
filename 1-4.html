@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-4</title>
+    <style>
+        body {
+            margin: 0;
+            /* 上下にスクロール用の余白を設定 */
+            padding: 30px 0;
+            background-color: #0a0a0c;
+            color: #00ffcc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-image: 
+                linear-gradient(rgba(0, 255, 204, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 204, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .page-title {
+            font-size: 1.4rem;
+            margin: 0 0 30px 0;
+            letter-spacing: 3px;
+            text-shadow: 0 0 8px rgba(0, 255, 204, 0.8);
+            text-align: center;
+        }
+        .ui-window {
+            width: 90%;
+            max-width: 800px;
+            background: rgba(10, 10, 12, 0.85);
+            border: 1px solid #00ffcc;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.15);
+            padding: 15px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            /* 動画と動画の間の余白 */
+            margin-bottom: 40px; 
+        }
+        /* 最後の動画の下には余白を作らない */
+        .ui-window:last-child {
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 1.1rem;
+            margin: 0 0 12px 0;
+            text-align: center;
+            letter-spacing: 2px;
+            text-shadow: 0 0 4px rgba(0, 255, 204, 0.5);
+        }
+        video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background-color: #000;
+            display: block;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-title">▶ EXHIBITION ARCHIVE</div>
+
+    <!-- 1つ目の動画 -->
+    <div class="ui-window">
+        <h2>◆ 作品タイトル 1 ◆</h2>
+        <video src="https://raw.githubusercontent.com/...動画1のURL" controls playsinline></video>
+    </div>
+
+    <!-- 2つ目の動画 -->
+    <div class="ui-window">
+        <h2>◆ 作品タイトル 2 ◆</h2>
+        <video src="https://raw.githubusercontent.com/...動画2のURL" controls playsinline></video>
+    </div>
+
+    <!-- 3つ目の動画 -->
+    <div class="ui-window">
+        <h2>◆ 作品タイトル 3 ◆</h2>
+        <video src="https://raw.githubusercontent.com/...動画3のURL" controls playsinline></video>
+    </div>
+
+</body>
+</html>
